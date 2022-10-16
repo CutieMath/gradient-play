@@ -1,27 +1,30 @@
- *, 
- *::before,
- *::after {
-   box-sizing: border-box;
+html,body {
+   margin:0;
+   padding:0;
+   width:100%;
+   height:100%;
+   overflow:hidden;
  }
-
- body {
-    font-family: system-ui;
-    margin:0;
- } 
-
- h1 {
-    line-height: 1.1;
-    font-size: 5rem;
-    max-width: 13ch;
+ #gradient-canvas {
+   width:100%;
+   height:100%;
+   --gradient-color-1: #ef008f; 
+   --gradient-color-2: #6ec3f4; 
+   --gradient-color-3: #7038ff;  
+   --gradient-color-4: #ffba27;
+   z-index:0;
  }
-
- canvas {
-    width: 100%;
-    height: 100%;
-}
-
- .container {
-    --max-width: 50rem;
-    max-width: min(100% - 2rem, var(--max-width));
-    margin-inline: auto;
+ 
+ h1{
+   font-family: sohne-var, "Helvetica Neue", Arial, sans-serif;
+   font-weight: 800;
+   font-size:4rem;
+   color: #343434;
+   position:absolute;
+   padding: 2rem;
+   top:0px;
+   z-index:100;
+   text-align:center;
+   width:100%;
+   mix-blend-mode: difference;
  }
