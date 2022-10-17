@@ -18,13 +18,31 @@ html,body {
  h1{
    font-family: sohne-var, "Helvetica Neue", Arial, sans-serif;
    font-weight: 800;
-   font-size:4rem;
-   color: #343434;
+   font-size:5.9rem;
+   color: black;
    position:absolute;
    padding: 2rem;
    top:0px;
    z-index:100;
-   text-align:center;
+   text-align:left;
    width:100%;
    mix-blend-mode: difference;
+ }
+
+ .container {
+   position:absolute;
+   top:8rem;
+   left:5rem;
+   width:50%;
+   height:100%;
+   z-index:1;
+ }
+
+ .canvas-container {
+   position: absolute;
+   inset: 0;
+   width: 100%;
+   height: 60%;
+   z-index: 0;
+   clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%);
  }
